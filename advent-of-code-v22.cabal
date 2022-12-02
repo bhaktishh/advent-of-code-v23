@@ -1,0 +1,140 @@
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.34.6.
+--
+-- see: https://github.com/sol/hpack
+
+name:           advent-of-code-v22
+version:        0.1.0.0
+description:    Please see the README on GitHub at <https://github.com/bhaktishh/advent-of-code-v22#readme>
+homepage:       https://github.com/bhaktishh/advent-of-code-v22#readme
+bug-reports:    https://github.com/bhaktishh/advent-of-code-v22/issues
+author:         Bhakti Shah
+maintainer:     shahbhakti21@gmail.com
+copyright:      Bhakti Shah
+license:        BSD3
+license-file:   LICENSE
+build-type:     Simple
+extra-source-files:
+    README.md
+    CHANGELOG.md
+
+source-repository head
+  type: git
+  location: https://github.com/bhaktishh/advent-of-code-v22
+
+library
+  exposed-modules:
+      Args
+      Day01
+      Day02
+      Day03
+      Day04
+      Day05
+      Day06
+      Day07
+      Day08
+      Day09
+      Day10
+      Day11
+      Day12
+      Day13
+      Day14
+      Day15
+      Day16
+      Day17
+      Day18
+      Day19
+      Day20
+      Day21
+      Day22
+      Day23
+      Day24
+      Day25
+  other-modules:
+      Paths_advent_of_code_v22
+  hs-source-dirs:
+      src
+  default-extensions:
+      BlockArguments
+      DataKinds
+      DeriveAnyClass
+      DeriveGeneric
+      ExplicitNamespaces
+      FlexibleInstances
+      InstanceSigs
+      LambdaCase
+      NamedFieldPuns
+      QuasiQuotes
+      ScopedTypeVariables
+      StandaloneDeriving
+      TupleSections
+      TypeOperators
+  ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints
+  build-depends:
+      base >=4.7 && <5
+    , optparse-generic
+    , split
+    , text
+  default-language: Haskell2010
+
+executable advent-of-code-v22-exe
+  main-is: Main.hs
+  other-modules:
+      Paths_advent_of_code_v22
+  hs-source-dirs:
+      app
+  default-extensions:
+      BlockArguments
+      DataKinds
+      DeriveAnyClass
+      DeriveGeneric
+      ExplicitNamespaces
+      FlexibleInstances
+      InstanceSigs
+      LambdaCase
+      NamedFieldPuns
+      QuasiQuotes
+      ScopedTypeVariables
+      StandaloneDeriving
+      TupleSections
+      TypeOperators
+  ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      advent-of-code-v22
+    , base >=4.7 && <5
+    , optparse-generic
+    , split
+    , text
+  default-language: Haskell2010
+
+test-suite advent-of-code-v22-test
+  type: exitcode-stdio-1.0
+  main-is: Spec.hs
+  other-modules:
+      Paths_advent_of_code_v22
+  hs-source-dirs:
+      test
+  default-extensions:
+      BlockArguments
+      DataKinds
+      DeriveAnyClass
+      DeriveGeneric
+      ExplicitNamespaces
+      FlexibleInstances
+      InstanceSigs
+      LambdaCase
+      NamedFieldPuns
+      QuasiQuotes
+      ScopedTypeVariables
+      StandaloneDeriving
+      TupleSections
+      TypeOperators
+  ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      advent-of-code-v22
+    , base >=4.7 && <5
+    , optparse-generic
+    , split
+    , text
+  default-language: Haskell2010
